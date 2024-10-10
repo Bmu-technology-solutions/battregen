@@ -1,0 +1,53 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
+.herobanner {
+  position: relative;
+  height: 90vh; /* Full height */
+  width: 100%; /* Full width */
+  overflow: hidden; /* Ensure nothing spills out */
+}
+
+.herobanner::before {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 50%; /* Left background image width */
+  height: 50%; /* Height of the left background image */
+  background-image: url('./assets/herobgleft.png'); /* Path to your left background image */
+  background-size: contain; /* or cover based on your preference */
+  background-repeat: no-repeat; /* Prevent repeating */
+}
+
+.herobanner::after {
+  content: '';
+  position: absolute; /* Use absolute positioning */
+  bottom: 0;
+  right: -34%; /* Stick to the right */
+  width: 50%; /* Right background image width */
+  height: 50%; /* Height of the right background image */
+  background-image: url('./assets/herobgright.png'); /* Path to your right background image */
+  background-size: contain; /* or cover based on your preference */
+  background-repeat: no-repeat; /* Prevent repeating */
+}
+
+.backgroundimage{
+  background-image: url('./assets/backgroundimage.svg'); /* Replace with your image path */
+  background-size: cover; /* or 'contain' */
+  background-position: center;
+  height: auto; /* Set height according to your needs */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white; /* Optional: text color for better visibility */
+}
+
