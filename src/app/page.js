@@ -23,7 +23,7 @@ export default function Home() {
 
   return (
     <div className="w-full bg-white py-0 mt-0 flex flex-col justify-center items-center h-auto">
-       <Navbar />
+       <Navbar currentPage="/"/>
       <HeroSection
         heroTitle="Lead Acid Battery Revitalization: Eco-Friendly Solutions "
         paragraph="Our mission is to play a key role in sustainable energy future by revitalizing used batteries and promoting environmental responsibility."

@@ -1,5 +1,5 @@
 // app/about/page.js
-
+"use client"
 import HeroSection3 from "../components/herosection3";
 import Navbar from "../components/Navbar";
 import welcomeimage from "../assets/welcomeimage.svg";
@@ -15,7 +15,7 @@ import Footer from "../components/footer";
 export default function Career() {
   return (
     <div>
-     <Navbar/>
+     <Navbar currentPage="/career"/>
      <HeroSection3
         heroTitle="Ready to live your dream?"
         paragraph="Come join a team that's redefining the financial experience for millions of people in emerging markets.."

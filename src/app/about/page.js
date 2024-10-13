@@ -15,7 +15,7 @@ import Footer from "../components/footer";
 export default function About() {
   return (
     <div>
-      <Navbar />
+      <Navbar  currentPage="/about"/>
       <HeroSection2
         heroTitle="Exceptional Battery Reconditioning for Reliable, Long-Lasting Performance "
         paragraph="Our Mission is to play a key role in sustainable energy future by revitalizing used batteries and promoting environmental responsibility."
@@ -29,7 +29,7 @@ export default function About() {
           "Advantages of Battregen Additive & Capsulate:"
 
         }
-        subhead={<span className="leading-3">Our mission is to recondition batteries sustainably, streamline maintenance, recycle materials,
+        paragraph={<span className="leading-3">Our mission is to recondition batteries sustainably, streamline maintenance, recycle materials,
           and reduce the costs associated with the upkeep of electric micro-mobility vehicles and industrial mover batteries.</span>
         }
 

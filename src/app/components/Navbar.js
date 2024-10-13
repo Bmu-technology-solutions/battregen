@@ -4,10 +4,10 @@ import { useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
 import { useRouter } from "next/navigation";
-import logo from "../assets/logo.png";
+import logo from "../assets/logo.svg";
 import {animateScroll as scroll } from 'react-scroll';
 
-const Navbar = () => {
+const Navbar = ({currentPage}) => {
   const [isOpen, setIsOpen] = useState(false);
   const router = useRouter();
 
@@ -15,7 +15,7 @@ const Navbar = () => {
     setIsOpen(!isOpen);
   };
 
-  const isActive = (path) => router.pathname === path;
+  const isActive = (path) => currentPage === path;
 
   const scrollToBottom = () => {
     scroll.scrollToBottom();
@@ -66,7 +66,7 @@ const Navbar = () => {
               {['/', '/about', '/solution', '/career', '/gallery'].map((path) => (
                 <Link key={path} href={path}>
                   <span className={`text-xs font-normal ${isActive(path) ? 'text-brandgreen' : 'text-white'}`}>
-                    {path === '/' ? 'HOME' : path.substring(1).toUpperCase()}
+                  {path === '/' ? 'HOME' : path === '/about' ? 'BATTREGEN PROPRIETIARY' : path.substring(1).toUpperCase()}
                   </span>
                 </Link>
               ))}
@@ -87,7 +87,7 @@ const Navbar = () => {
             {['/', '/about', '/solution', '/career', '/gallery'].map((path) => (
               <Link key={path} href={path} onClick={() => setIsOpen(false)}>
                 <span className={`block px-3 py-2 text-xs font-normal ${isActive(path) ? 'text-brandgreen' : 'text-white'}`}>
-                  {path === '/' ? 'HOME' : path.substring(1).toUpperCase()}
+                  {path === '/' ? 'HOME' : path === '/about' ? 'BATTREGEN PROPRIETIARY' : path.substring(1).toUpperCase()}
                 </span>
               </Link>
             ))}

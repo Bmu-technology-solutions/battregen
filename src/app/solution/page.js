@@ -1,4 +1,5 @@
 // app/about/page.js
+"use client"
 
 import HeroSection2 from "../components/herosection2";
 import Navbar from "../components/Navbar";
@@ -17,8 +18,10 @@ import NavbarTwo from "../components/navbar2";
 export default function Solution() {
   return (
     <div>
-     <NavbarTwo
-     />
+      
+     <NavbarTwo currentPage="/solution"/>
+      
+    
      <HeroSection2
         heroTitle={<span className="text-white">Simplifying Battery Maintenance and Replacement: Overcoming Common Hurdles</span>}
         paragraph={<span className="text-white">Battregens offers solutions that enhance battery longevity, reduce expenses, and provide eco-conscious alternatives. 
@@ -35,14 +38,15 @@ export default function Solution() {
       />
      <Text 
          textTitle={
-          "Battery Solution International "
+          "How It Works? "
        }
-       text={
-        "Unique Proprietary Formula"
-     }
-       paragraph={<span className="leading-3">Our R&D has led to a breakthrough in battery life extension technology formula, the Battregen Battery Additive & Capsulate.  marking a significant advance in battery longevity. This top-tier solution rejuvenates batteries with its eco-friendly organic compound formula, free from metals and harmful substances. It works fast, revitalizing batteries within days and significantly extending their lifespan, 
-       offering customers unparalleled value in terms of efficiency and cost savings. </span>
+      
+       paragraph={<span className="leading-3">Our technology monitors and restores industrial battery cells to near original capacity through regular maintenance. Each 2v cell is treated as an independent unit, 
+       allowing for precise quality checks. If a cell needs refurbishing, it's serviced thoroughly, including our natural BSI Battery Additive, which ensures it meets high standards. <br/>
+        Over the past three years, all industrial batteries, including deep discharge ones refurbished by BSI, have maintained excellent efficiency. We credit this to our proven method, which ensures a consistent energy supply and cuts down on battery replacement and maintenance costs for our clients. This method results in significant savings and improved efficiency, drawing more industries to our sustainable solutions that enhance performance while reducing environmental impact.
+         </span>
        }
+      
         />
         <Gallery 
       buttonOne={{ text: "VIEW GALLERY", link: "/gallery" }}

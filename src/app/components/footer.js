@@ -3,7 +3,7 @@
 import React from 'react';
 import Link from "next/link";
 import Image from "next/image";
-import footerlogo from "../assets/footerlogo.png";
+import footerlogo from "../assets/footerlogo.svg";
 import { animateScroll as scroll } from 'react-scroll';
 import callicon from "../assets/callicon.svg";
 import mailicon from "../assets/mailicon.svg"; // You might want to use this later

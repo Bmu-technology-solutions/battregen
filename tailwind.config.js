@@ -25,6 +25,7 @@ module.exports = {
           navbarstroke: '#5F5F5F',
           rolebg: '#F8F8F8',
           roletext: '#78A401',
+          textgreen1:'#5F9C07'
 
   
   

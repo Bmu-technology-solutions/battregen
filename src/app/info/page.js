@@ -1,5 +1,5 @@
 // app/about/page.js
-
+"use client"
 import HeroSection2 from "../components/herosection2";
 import Navbar from "../components/Navbar";
 import Footer from "../components/footer";
