@@ -84,9 +84,9 @@ const Role = () => {
          </div>
             <div className="w-full py-4 grid grid-cols-1 sm:grid-cols-3 lg:grid-cols-4 gap-4  ">
                 {cardsData.map((card, index) => (
-                    <AnimatedWrapper delay={card.delay}>
+                    <AnimatedWrapper   key={index} delay={card.delay}>
                           <RoleCard
-                        key={index}
+                      
                         
                         header={card.header}
                         paragraph={card.paragraph}

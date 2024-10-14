@@ -19,7 +19,6 @@ export default function Career() {
         buttonOne={{ text: "CONTACT US", link: "/" }}
         headercolor="brandblack"
       />
-     
         <Role 
         />
         

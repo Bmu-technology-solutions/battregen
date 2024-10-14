@@ -42,7 +42,7 @@ export default function Solution() {
        }
       
        paragraph={<span className="leading-3">Our technology monitors and restores industrial battery cells to near original capacity through regular maintenance. Each 2v cell is treated as an independent unit, 
-       allowing for precise quality checks. If a cell needs refurbishing, it's serviced thoroughly, including our natural BSI Battery Additive, which ensures it meets high standards. <br/>
+       allowing for precise quality checks. If a cell needs refurbishing, it is serviced thoroughly, including our natural BSI Battery Additive, which ensures it meets high standards. <br/>
         Over the past three years, all industrial batteries, including deep discharge ones refurbished by BSI, have maintained excellent efficiency. We credit this to our proven method, which ensures a consistent energy supply and cuts down on battery replacement and maintenance costs for our clients. This method results in significant savings and improved efficiency, drawing more industries to our sustainable solutions that enhance performance while reducing environmental impact.
          </span>
        }
