@@ -3,6 +3,7 @@ import Link from "next/link";
 import Image from "next/image";
 import BsiSection from "./bsicardsection";
 import AnimatedWrapper from "./animatedwrapper";
+import SolutionSection from "./solutionsection";
 
 const BsiContainer = ({ sectionTitle, paragraph, headercolor }) => {
   return (
@@ -18,6 +19,7 @@ const BsiContainer = ({ sectionTitle, paragraph, headercolor }) => {
         </div>
         <div className="col-span-1">
         <BsiSection />
+       
         </div>
         
       </div>

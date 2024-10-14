@@ -34,8 +34,7 @@ function Footer() {
           <div className='pt-16 lg:w-4/5'>
             <Image src={footerlogo} alt="Footer Logo" />
             <div className='text-xs mt-4 leading-6'>
-              Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-              Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+            Revitalizing used batteries and promoting environmental responsibility.
             </div>
           </div>
           <div className='flex items-center text-xs gap-3 pt-7'>
@@ -66,7 +65,7 @@ function Footer() {
         </div>
       </div>
       <div className='flex items-center justify-center lg:justify-start lg:pl-32 lg:pt-0 text-sm'>
-        <p>Copyright © Day2DayPro 2022. All rights reserved</p>
+        <p>copyright Battregen 2024 design by BMU</p>
       </div>
 
       <button onClick={scrollToTop} className="absolute bottom-5 left-2 lg:bottom-4 lg:left-8 " aria-label="Scroll to top">

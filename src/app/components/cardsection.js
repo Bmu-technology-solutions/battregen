@@ -13,7 +13,7 @@ const CardSection = () => {
             id:'0',
             image: image1,
             header: 'Proprietary Revitalization Method',
-            paragraph: 'Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea',
+            paragraph: 'These methods typically involves rebalancing the electrolyte and internal components in various types of batteries.',
             delay:'0.2',
         },
         {
@@ -26,8 +26,8 @@ const CardSection = () => {
         {
             id:'2',
             image: image3,
-            header: 'Profitability and Rapid Growth',
-            paragraph: 'turn-key franchise model boasts low startup and operational costs for rapid growth',
+            header: 'Eco-friendly Solution',
+            paragraph: 'Eliminating waste entirely from the refurbishment process',
             delay:'0.6'
         },
         {

@@ -22,18 +22,18 @@ export default function Career() {
          textTitle={<span className="leading-3 text-xl text-black">  Who we are </span>
         
        }
-       paragraph={ <>
+       paragraph={ <span className="leading-5 text-sm text-black">
         Our Mission is to play a key role in sustainable energy future by
         revitalizing used batteries and promoting environmental responsibility.
         Our Vision is to become Africa foremost provider of battery regeneration solutions.
         Our Core Values are:
         <br />
         <span className="font-medium">Innovation:</span> Constantly striving for technological advancements and creative
-        solutions. <br />
+        solutions. <br /> 
         <span className="font-medium">Sustainability:</span> Prioritizing environmental impact reduction and sustainable practices. <br/>
         <span className="font-medium">Integrity:</span> Commitment to honesty, transparency, and ethical practices.
-      </>
-       
+      
+        </span>
        }
         backgroundcolor="bg-rolebg"
         />

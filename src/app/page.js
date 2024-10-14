@@ -2,8 +2,8 @@
 
 import HeroSection from "./components/herosection";
 import Navbar from "./components/Navbar";
-import welcomeimage from "./assets/welcomeimage.svg";
-import heroimage from "./assets/heroimage.svg";
+import welcomeimg from "./assets/welcomeimg.png";
+import heroimg from "./assets/heroimg.svg";
 import VideoComponent from "./components/videopage";
 import image1 from "./assets/image1.png";
 import WelcomePage from "./components/welcomepage";
@@ -27,7 +27,7 @@ export default function Home() {
       <HeroSection
         heroTitle="Lead Acid Battery Revitalization: Eco-Friendly Solutions "
         paragraph="Our mission is to play a key role in sustainable energy future by revitalizing used batteries and promoting environmental responsibility."
-        imageSrc={heroimage}
+        imageSrc={heroimg}
         buttonOne= {{ text: "CONTACT US" }}
         buttonTwo={{ text: "LITHIUM SOLUTION", link: "/libr" }}
         headercolor="brandblack"
@@ -46,16 +46,16 @@ export default function Home() {
           <>
             Our Mission is to play a key role in sustainable energy future by
             revitalizing used batteries and promoting environmental responsibility.
-            Our Vision is to become Africa’s foremost provider of battery regeneration solutions.
+            Our Vision is to become Africa foremost provider of battery regeneration solutions.
             Our Core Values are:
             <br />
             <span className="font-bold">Innovation:</span> Constantly striving for technological advancements and creative
             solutions. <br />
-            <span className="font-bold">Sustainability:</span> Prioritizing environmental impact reduction and sustainable practices.
+            <span className="font-bold">Sustainability:</span> Prioritizing environmental impact reduction and sustainable practices. <br/>
             <span className="font-bold">Integrity:</span> Commitment to honesty, transparency, and ethical practices.
           </>
         }
-        imageSrc={welcomeimage}
+        imageSrc={welcomeimg}
         buttonOne={{ text: "CONTACT US", link: "/" }}
         headercolor="white"
       />
