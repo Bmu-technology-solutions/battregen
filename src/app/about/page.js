@@ -2,7 +2,7 @@
 "use client";
 import HeroSection2 from "../components/herosection2";
 import Navbar from "../components/Navbar";
-import welcomeimg from "../assets/welcomeimg.png";
+import aboutimg from "../assets/aboutimg.png";
 import Advantage from "../components/advantages";
 import propietaryimage from "../assets/propietaryimage.svg";
 import Text from "../components/text"
@@ -18,7 +18,7 @@ export default function About() {
       <HeroSection2
         heroTitle="Exceptional Battery Reconditioning for Reliable, Long-Lasting Performance "
         paragraph="Our Mission is to play a key role in sustainable energy future by revitalizing used batteries and promoting environmental responsibility."
-        imageSrc={welcomeimg}
+        imageSrc={aboutimg}
         buttonOne={{ text: "CONTACT US" }}
 
         headercolor="brandblack"

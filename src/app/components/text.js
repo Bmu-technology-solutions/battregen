@@ -6,7 +6,7 @@ import vector from '../assets/Vector.png';
 
 const Text = ({ textTitle, paragraph, buttonOne,backgroundcolor, Height }) => {
   return (
-    <div className={`flex flex-col w-full px-4  lg:px-36 md:px-40 pb-8 ${Height}`}>
+    <div className={`flex flex-col w-full px-4  lg:px-36 md:px-28 pb-8 ${Height}`}>
       <div className="py-2">
         <AnimatedWrapper delay={0.2}>
         <h1 className="text-3xl text-textgreen1 pt-6 font-bold leading-normal">{textTitle}</h1>

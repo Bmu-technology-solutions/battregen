@@ -50,7 +50,7 @@ export default function Solution() {
          </span>
          
        }
-       Height="pt-16 pb-24 " 
+       Height=" h-auto pb-20 pt-16 " 
         />
         <Gallery 
       buttonOne={{ text: "VIEW GALLERY", link: "/gallery" }}

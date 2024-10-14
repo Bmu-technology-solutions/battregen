@@ -16,7 +16,7 @@ function Footer() {
   return (
     <div className='w-full flex flex-col lg:gap-4 relative bg-white py-5 lg:pt-28 md:w-5/5 text-black h-auto'>
       {/* Image Gallery */}
-      <div className='grid grid-cols lg:grid-cols-2 gap-10 px-4 pb-10 lg:px-36 md:px-24'>
+      <div className='grid grid-cols lg:grid-cols-2 gap-10 px-4 pb-10 lg:px-36 md:px-28'>
         <div className='flex flex-col'>
           
           <div className='grid lg:grid-cols-2 lg:gap-4 text-xs'>

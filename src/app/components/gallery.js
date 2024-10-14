@@ -10,8 +10,8 @@ import vector from '../assets/Vector.png';
 
 function Gallery({buttonOne}) {
   return (
-    <div className='w-full flex flex-col gap-4 bg-brandblack py-28 text-white lg:px-12  h-auto'>
-        <div className='grid grid-cols-1 px-4 lg:gap-12   md:grid-cols-2 md:gap-2 md:px-24  lg:grid-cols-2 justify-center'>
+    <div className='w-full flex flex-col gap-4 bg-brandblack py-28 text-white lg:px-10  h-auto'>
+        <div className='grid grid-cols-1 px-4 lg:gap-12   md:grid-cols-2 md:gap-2 md:px-28  lg:grid-cols-2 justify-center'>
             <div className='flex flex-col'>
               <AnimatedWrapper delay={0.2}>
                 <h1 className='text-3xl'>Gallery</h1>
@@ -38,7 +38,7 @@ function Gallery({buttonOne}) {
         </div>
 
         {/* Image Gallery */}
-        <div className='grid lg:grid-cols-2 md:grid-cols-2 gap-4 px-4  md:mx-20 py-4'>
+        <div className='grid lg:grid-cols-2 md:grid-cols-2 gap-4 px-4  md:mx-24 py-4'>
             <div className='flex flex-col'>
               <AnimatedWrapper delay={0.8}>
               <h1 className='text-xs pb-2'>Before revitalization</h1>

@@ -22,7 +22,7 @@ const Navbar = ({currentPage}) => {
   };
 
   return (
-    <div className="w-full bg-brandblack flex items-center justify-center px-2 md:px-0 border-brandblack">
+    <div className="w-full bg-brandblack flex items-center justify-center px-2 md:px-0 ">
       <nav className="bg-brandblack w-full mt-4 md:w-4/5 rounded-2xl border border-cardoutline md:rounded-3xl lg:rounded-full ">
         <div className="w-full px-4 sm:px-6 lg:pr-2 lg:pl-10">
           <div className="relative flex items-center justify-between h-16">
