@@ -30,7 +30,7 @@ const BsiSection = () => {
 
     return (
         <section className="  w-full  ">
-            <div className="w-full flex flex-col   gap-3 border-solid border-zinc-950 ">
+            <div className="w-full flex flex-col  gap-3 border-solid border-zinc-950 ">
                 {cardsData.map((card, index) => (
                     <AnimatedWrapper  key={index}  delay={card.delay}>
                          <BsiCard
