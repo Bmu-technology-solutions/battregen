@@ -20,7 +20,7 @@ const Text = ({ textTitle, paragraph, buttonOne,backgroundcolor }) => {
       <div className="flex space-x-4">
       {buttonOne && (
         <AnimatedWrapper delay={0.6}>
-          <button className="text-brandblack px-4 py-3 rounded-full text-xs bg-textgreen flex items-center">
+          <button className="text-brandblack px-4 py-3 rounded-full text-xs bg-textgreen ">
           {buttonOne.text}
             <Image src={vector} alt="Bullet Point" className="ml-2" />
           </button>

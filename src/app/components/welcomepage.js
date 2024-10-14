@@ -3,6 +3,7 @@ import Link from "next/link";
 import Image from "next/image";
 import {animateScroll as scroll, scrollSpy } from 'react-scroll';
 import AnimatedWrapper from "./animatedwrapper";
+import vector from '../assets/Vector.png';
 
 const WelcomePage = ({ welcomeTitle, paragraph, imageSrc, buttonOne,subheading, welcomecolor }) => {
   const scrollToBottom = () => {
@@ -20,13 +21,12 @@ const WelcomePage = ({ welcomeTitle, paragraph, imageSrc, buttonOne,subheading, 
         <p className="text-sm mb-6 leading-relaxed">{paragraph}</p>
      
      <div className="flex space-x-4">
-       {buttonOne && (
-         <Link href={buttonOne.link}>
-           <button onClick={scrollToBottom} className=" text-brandblack px-4 py-3 rounded-full text-xs bg-white">
-             {buttonOne.text}
-           </button>
-         </Link>
-       )}
+         {buttonOne && (
+          <button onClick={scrollToBottom} className="text-brandblack px-4 py-3 rounded-full text-xs bg-white flex items-center">
+            {buttonOne.text}
+            <Image src={vector} alt="Bullet Point" className="ml-2" />
+          </button>
+             )}
      </div>
         </AnimatedWrapper>
         </div>
