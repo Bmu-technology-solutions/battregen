@@ -2,10 +2,6 @@
 "use client"
 import HeroSection3 from "../components/herosection3";
 import Navbar from "../components/Navbar";
-import welcomeimage from "../assets/welcomeimage.svg";
-import Advantage from "../components/advantages";
-import propietaryimage from "../assets/propietaryimage.svg";
-import bullet from "../assets/bullet.svg";
 import Role from "../components/role"
 import Gallery from "../components/gallery";
 import Footer from "../components/footer";

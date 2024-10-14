@@ -5,7 +5,6 @@ import Navbar from "../components/Navbar";
 import welcomeimage2 from "../assets/welcomeimage2.svg";
 import Advantage from "../components/advantages";
 import propietaryimage from "../assets/propietaryimage.svg";
-import bullet from "../assets/bullet.svg";
 import Text from "../components/text"
 import Gallery from "../components/gallery";
 import Footer from "../components/footer";

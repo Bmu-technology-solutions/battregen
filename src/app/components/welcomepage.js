@@ -41,8 +41,6 @@ const WelcomePage = ({ welcomeTitle, paragraph, imageSrc, buttonOne,subheading, 
   )}
 </div>
 
-     
-     
     </div>
     </div>
    
