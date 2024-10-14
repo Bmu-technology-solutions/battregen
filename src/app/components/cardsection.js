@@ -10,24 +10,28 @@ import AnimatedWrapper from './animatedwrapper';
 const CardSection = () => {
     const cardsData = [
         {
+            id:'0',
             image: image1,
             header: 'Proprietary Revitalization Method',
-            paragraph: 'Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
-            delay:'0.2'
+            paragraph: 'Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea',
+            delay:'0.2',
         },
         {
+            id:'1',
             image: image2,
             header: 'industrial movers in the west African stored energy sector',
             paragraph: 'catering to an ever-growing market that demands sustainable options for transportation',
             delay:'0.4'
         },
         {
+            id:'2',
             image: image3,
             header: 'Profitability and Rapid Growth',
             paragraph: 'turn-key franchise model boasts low startup and operational costs for rapid growth',
             delay:'0.6'
         },
         {
+            id:'3',
             image: image4,
             header: 'Cutting-Edge Technology',
             paragraph: 'Employing advanced formulas to extend battery life significantly and performance',
