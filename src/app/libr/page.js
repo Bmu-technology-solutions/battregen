@@ -1,6 +1,6 @@
 // app/about/page.js
 "use client"
-import HeroSection from "../components/herosection";
+import HeroSection2 from "../components/herosection2";
 import solutionimg from "../assets/solutionimg.png";
 import Gallery from "../components/gallery";
 import Footer from "../components/footer";
@@ -13,7 +13,7 @@ export default function Lithium() {
   return (
     <div>
      <NavbarTwo />
-     <HeroSection
+     <HeroSection2
         heroTitle={<span className="text-white">Simplifying Battery Maintenance and Replacement: Overcoming Common Hurdles</span>}
         paragraph={<span className="text-white">Battregens offers solutions that enhance battery longevity, reduce expenses, and provide eco-conscious alternatives. 
         battery users are keen to utilize Battregen for improved performance and sustainability benefits.</span>}
