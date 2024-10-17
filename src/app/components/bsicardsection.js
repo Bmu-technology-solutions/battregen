@@ -9,20 +9,20 @@ const BsiSection = () => {
         {
             id:'0',
             header: 'Mobility',
-            paragraph: 'Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat quis nostrud exercitation ullamco laboris.',
+            paragraph: 'Ensuring reliable performance and minimizing downtime for mobile equipment, such as electric vehicles, carts, or other machines, rely on batteries for power.',
             delay: '0.2'
         },
         {
            
             id:'1',
             header: 'Telecom',
-            paragraph: 'Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat quis nostrud exercitation ullamco laboris.',
+            paragraph: 'We ensure that backup power solutions such as batteries (e.g, UPS systems), are ready to provide uniterrupted service during power outages or equipment failure.',
             delay: '0.4'
         },
         {
             id:'2',
             header: 'Forklift',
-            paragraph: 'Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat quis nostrud exercitation ullamco laboris.',
+            paragraph: 'Focused on extending the life and improving the performance of forklift batteries.',
             delay:'0.6'
         },
        

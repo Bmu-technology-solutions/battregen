@@ -12,77 +12,36 @@ const Role = () => {
     const cardsData = [
         {
             
-            header: 'Accountant',
-            paragraph: 'Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
-            Read: 'read more',
+            header: 'Career Growth',
+            paragraph: 'We believe in nurturing talent and providing opportunities for advancement. At Battregen Limited, you will have access to professional development programs, mentorship, and clear career progression pathways to help you achieve your full potential.',
+           
             delay: '0.6',
         },
         {
             
-            header: 'Marketer',
-            paragraph: 'Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
-            Read: 'read more',
+            header: 'Global Impact',
+            paragraph: 'Battregen Limited is a global leader in the energy sector. Your work here will have a far-reaching impact, contributing to critical energy infrastructure and solutions that support communities around the world.',
+           
             delay: '0.8'
         },
         {
            
-            header: 'Developer',
-            paragraph: 'Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
-            Read: 'read more',
+            header: 'Sustainability Focus',
+            paragraph: 'Sustainability is at the core of our operations. By joining our team, you will be part of initiatives aimed at reducing environmental impact, promoting renewable energy sources, and ensuring a sustainable future for generations to come.',
+           
             delay: '1.0',
         },
-        {
-            
-            header: 'Manager',
-            paragraph: 'Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
-            Read: 'read more',
-            delay: '1.2',
-        },
-        {
-            
-            header: 'Designer',
-            paragraph: 'Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
-            Read: 'read more',
-            delay: '1.4',
-        },
-        {
-            
-            header: 'Customer Service',
-            paragraph: 'Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
-            Read: 'read more',
-            delay: '1.6',
-        },
-        {
-            
-            header: 'Sales Representative',
-            paragraph: 'Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
-            Read: 'read more',
-            delay: '1.8',
-        },
-        {
-            
-            header: 'Human Resources Manager',
-            paragraph: 'Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
-            Read: 'read more',
-            delay: '2.0',
-        },
+      
     ];
 
     return (
         <section className=" w-full grid grid-rows-1 px-4 py-14 bg-rolebg lg:px-32  md:px-20">
-             <div className="flex flex-col w-full pb-10">
+             <div className="flex flex-col w-full pb-2">
                 <AnimatedWrapper delay={0.2}>
-                <h1 className="text-3xl text-textgreen1 font-bold leading-normal"> Available Roles</h1>
+                <h1 className="text-3xl text-textgreen1 font-bold leading-normal"> Why join Battregen?</h1>
                 </AnimatedWrapper>
-                <AnimatedWrapper delay={0.4}>
-                <p className="text-sm  leading-5">Our technology monitors and restores industrial battery cells to near original capacity through regular maintenance.
-          Each 2v cell is treated as an independent unit, allowing for precise quality.</p>
-                </AnimatedWrapper>
-         
-         
-          
          </div>
-            <div className="w-full py-4 grid grid-cols-1 sm:grid-cols-3 lg:grid-cols-4 gap-4  ">
+            <div className="w-full py-4 grid grid-cols-1 sm:grid-cols-3 lg:grid-cols-3 gap-4  ">
                 {cardsData.map((card, index) => (
                     <AnimatedWrapper   key={index} delay={card.delay}>
                           <RoleCard

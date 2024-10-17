@@ -9,20 +9,20 @@ const SolutionSection = () => {
         {
             id:'0',
             header: 'Extended battery life guarantee',
-            paragraph: 'Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat quis nostrud exercitation ullamco laboris.',
+            paragraph: 'Batteregen revitalization techniques, such as reconditioning, balancing, or desulfation, help restore or improve the performance of degraded batteries, extending their usable litespan.',
             delay: '0.2'
         },
         {
            
             id:'1',
             header: 'Cost Saving',
-            paragraph: 'Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat quis nostrud exercitation ullamco laboris.',
+            paragraph: 'Revitalized batteries typically require less maintenance as their performance is restored. This reduces costs associated with frequent inspections, repairs, or emergency replacements.',
             delay: '0.4'
         },
         {
             id:'2',
             header: 'Environmental Impact',
-            paragraph: 'Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat quis nostrud exercitation ullamco laboris.',
+            paragraph: 'Batteries that are revitalized instead of discarded contribute to reducing e-waste. Batteries contain materials such as lead, lithium, and other heavy metals that, if improperly disposed of, can pollute the environment.',
             delay:'0.6'
         },
        
