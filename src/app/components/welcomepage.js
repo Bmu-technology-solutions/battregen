@@ -10,8 +10,8 @@ const WelcomePage = ({ welcomeTitle, paragraph, imageSrc, buttonOne,subheading, 
     scroll.scrollToBottom();
    };
   return (
-    <div className="w-full flex justify-center bg-brandblack  md:pt-44 text-white">
-         <div className="hero-section grid grid-cols-1 pb-3 pt-64 mt-5  lg:pb-16  md:pb-16 h-auto md:grid-cols-2  md:h-auto w-full md:w-4/5  md:pt-5 px-4" >
+    <div className="w-full flex justify-center bg-brandblack  md:pt-48 text-white">
+         <div className="hero-section grid grid-cols-1 pb-7 pt-60 mt-5  lg:pb-16 lg:pt-28 md:pb-16 h-auto md:grid-cols-2  md:h-auto w-full md:w-4/5  md:px-0 md:pt-7 px-4" >
         <div className="col-span-1 pt-7  ">
         <AnimatedWrapper delay={0.2}>
         <h1 className={`text-3xl font-bold mb-4 leading-normal ${welcomecolor}`}>{welcomeTitle}</h1>
@@ -33,10 +33,10 @@ const WelcomePage = ({ welcomeTitle, paragraph, imageSrc, buttonOne,subheading, 
         <div className="col-span-1 flex items-center justify-center h-auto">
   {imageSrc && (
     <AnimatedWrapper delay={0.6}>
-         <div className="mb-4">
+         <div className="mb-4 pt-8 md:pt-0">
       <Image src={imageSrc} alt={welcomeTitle} className="max-w-full h-auto" />
     </div>
-    </AnimatedWrapper>
+    </AnimatedWrapper> 
    
   )}
 </div>

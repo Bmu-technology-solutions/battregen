@@ -2,7 +2,7 @@
 
 import HeroSection from "./components/herosection";
 import Navbar from "./components/Navbar";
-import welcomeimg from "./assets/welcomeimg.png";
+import welcomeimg from "./assets/welcomeimg.svg";
 import heroimg from "./assets/heroimg.svg";
 import VideoComponent from "./components/videopage";
 import image1 from "./assets/image1.png";
