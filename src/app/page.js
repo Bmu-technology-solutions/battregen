@@ -33,7 +33,7 @@ export default function Home() {
         headercolor="brandblack"
       />
 
-       <VideoComponent />   
+       {/* <VideoComponent />    */}
       <WelcomePage
         welcomeTitle={
           <>

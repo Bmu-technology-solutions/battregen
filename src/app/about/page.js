@@ -46,7 +46,9 @@ export default function About() {
         }
         paragraph={<span className="leading-3">Our R&D has led to a breakthrough in battery life extension technology formula, the Battregen Battery Additive & Capsulate.  marking a significant advance in battery longevity. This top-tier solution rejuvenates batteries with its eco-friendly organic compound formula, free from metals and harmful substances. It works fast, revitalizing batteries within days and significantly extending their lifespan,
           offering customers unparalleled value in terms of efficiency and cost savings. </span>
+        
         }
+        Height="h-full pb-24 pt-14 " 
       />
       <Gallery
         buttonOne={{ text: "VIEW GALLERY", link: "/gallery" }}

@@ -14,7 +14,7 @@ const HeroSection = ({ heroTitle, paragraph, imageSrc, buttonOne, buttonTwo, hea
   };
   
   return (
-    <div className={`w-full flex justify-center lg:herobanner pb-52 lg:pb-18  md:pb-44 lg:mb-0 md:h-auto ${backgroundcolor}`}>
+    <div className={`w-full flex justify-center lg:herobanner pb-10 lg:pb-10  md:pb-44 lg:mb-0 md:h-auto ${backgroundcolor}`}>
       <div className="hero-section grid grid-cols-1  md:grid-cols-2 w-full md:w-4/5 lg:pb-20 pt-4 md:pt-14 px-4 md:px-0">
         <div className="col-span-1 pt-2 lg:pt-8">
           <AnimatedWrapper delay={0.2}>
