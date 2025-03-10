@@ -1,17 +1,71 @@
 "use client";
 
-import React from 'react';
+import React, { useState } from 'react';
+import { ToastContainer,toast } from "react-toastify";
 import Link from "next/link";
 import Image from "next/image";
 import footerlogo from "../assets/footerlogo.svg";
 import { animateScroll as scroll } from 'react-scroll';
 import callicon from "../assets/callicon.svg";
 import mailicon from "../assets/mailicon.svg"; // You might want to use this later
+import emailjs from '@emailjs/browser';
 
-function Footer() {
-  const scrollToTop = () => {
-    scroll.scrollToTop();
-  };
+
+  
+
+  export const Footer = () => {
+    const scrollToTop = () => {
+      scroll.scrollToTop();
+    };
+    const [userInput, setUserInput] = useState({
+      name: "",
+      email: "",
+      phone: "",
+      message: ""
+    });
+  
+    const handleChange = (e) => {
+      const { name, value } = e.target;
+      setUserInput({
+        ...userInput,
+        [name]: value
+      });
+    };
+  
+    const handleSubmit = async (e) => {
+      e.preventDefault();
+  
+      const serviceID = process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID;
+      const templateID = process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID;
+      const userID = process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY;
+  
+      try {
+        const emailParams = {
+          name: userInput.name,
+          email: userInput.email,
+          phone: userInput.phone,
+          message: userInput.message
+        };
+  
+        const res = await emailjs.send(serviceID, templateID, emailParams, userID);
+  
+        if (res.status === 200) {
+          toast.success("Message sent successfully!");
+          setUserInput({
+            name: "",
+            email: "",
+            phone: "",
+            message: ""
+          });
+        }
+      } catch (error) {
+        toast.error("Failed to send message. Please try again later.");
+      }
+    };
+  
+
+
+  
 
   return (
     <div className='w-full flex flex-col lg:gap-4 relative bg-white py-5 lg:pt-28 md:w-5/5 text-black h-auto'>
@@ -47,21 +101,27 @@ function Footer() {
 
         <div className='flex flex-col w-full'>
           <h1 className='text-3xl pb-8 font-medium'>Leave your details and we will get back to you shortly!</h1>
+         <providers>
+          <form onSubmit={handleSubmit} className='flex flex-col gap-3'>
+            <label htmlFor="name" className="block mb-2 text-sm font-medium text-gray-900 dark:text-black">Name</label>
+            <input type="text" name="name" value={userInput.name} onChange={handleChange} className="block p-2 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-inputfieldstroke focus:ring-blue-500 focus:border-blue-500  dark:border-gray-600 dark:placeholder-gray-400 dark:text-black dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder='Your Name' required />
 
-          <form className='flex flex-col gap-3'>
-            <label htmlFor="name" className='text-xs pb-1'>Name</label>
-            <input type="text" id="name" className='mb-2 p-2 rounded border border-inputfieldstroke bg-inputfield text-inputfieldtext' placeholder='Your Name' required />
+            <label htmlFor="email" className="block mb-2 text-sm font-medium text-gray-900 dark:text-black">Email</label>
+            <input type="email" name="email" value={userInput.email} onChange={handleChange}className="block p-2 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-inputfieldstroke focus:ring-blue-500 focus:border-blue-500  dark:border-gray-600 dark:placeholder-gray-400 dark:text-black dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder='Your Email' required />
 
-            <label htmlFor="email" className='text-xs pb-1'>Email</label>
-            <input type="email" id="email" className='mb-2 p-2 rounded border border-inputfieldstroke bg-inputfield text-inputfieldtext' placeholder='Your Email' required />
+            <label htmlFor="phone" className="block mb-2 text-sm font-medium text-gray-900 dark:text-black">Phone Number</label>
+            <input type="text" name="phone" value={userInput.phone} onChange={handleChange}className="block p-2 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-inputfieldstroke focus:ring-blue-500 focus:border-blue-500  dark:border-gray-600 dark:placeholder-gray-400 dark:text-black dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder='Your Phone Number' required />
 
-            <label htmlFor="phone" className='text-xs pb-1'>Phone Number</label>
-            <input type="text" id="phone" className='mb-2 p-2 rounded border border-inputfieldstroke bg-inputfield text-inputfieldtext' placeholder='Your Phone Number' required />
+            <label for="message" className="block mb-2 text-sm font-medium text-gray-900 dark:text-black">Message</label>
+            <textarea name="message" value={userInput.message}  onChange={handleChange} rows="4" className="block p-2 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-inputfieldstroke focus:ring-blue-500 focus:border-blue-500  dark:border-gray-600 dark:placeholder-gray-400 dark:text-black dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Your Message..."></textarea>
 
-            <button type="submit" className="flex-nowrap text-white px-4 py-3 rounded-full text-xs w-40 bg-black">
+
+            <button type="submit" value= "send" className="flex-nowrap text-white px-4 py-3 rounded-full text-xs w-40 bg-black">
               Send Message
             </button>
+            <ToastContainer />
           </form>
+          </providers>
         </div>
       </div>
       <div className='flex items-center justify-center lg:justify-start lg:pl-32 lg:pt-0 text-sm'>
