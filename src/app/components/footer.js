@@ -101,7 +101,7 @@ import emailjs from '@emailjs/browser';
 
         <div className='flex flex-col w-full'>
           <h1 className='text-3xl pb-8 font-medium'>Leave your details and we will get back to you shortly!</h1>
-         <providers>
+         
           <form onSubmit={handleSubmit} className='flex flex-col gap-3'>
             <label htmlFor="name" className="block mb-2 text-sm font-medium text-gray-900 dark:text-black">Name</label>
             <input type="text" name="name" value={userInput.name} onChange={handleChange} className="block p-2 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-inputfieldstroke focus:ring-blue-500 focus:border-blue-500  dark:border-gray-600 dark:placeholder-gray-400 dark:text-black dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder='Your Name' required />
@@ -121,7 +121,7 @@ import emailjs from '@emailjs/browser';
             </button>
             <ToastContainer />
           </form>
-          </providers>
+
         </div>
       </div>
       <div className='flex items-center justify-center lg:justify-start lg:pl-32 lg:pt-0 text-sm'>
