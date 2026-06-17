@@ -24,13 +24,14 @@ export default function Solution() {
       
     
      <HeroSection2
-        heroTitle={<span className="text-white">Simplifying Battery Maintenance and Replacement: Overcoming Common Hurdles</span>}
+        heroTitle={<span className="text-textgreen">Simplifying Battery Maintenance and Replacement: <span className="text-white">Overcoming Common Hurdles</span></span>}
         paragraph={<span className="text-white">Battregens offers solutions that enhance battery longevity, reduce expenses, and provide eco-conscious alternatives. 
         battery users are keen to utilize Battregen for improved performance and sustainability benefits.</span>}
         imageSrc={solutionimg}
         buttonOne={{ text: "CONTACT US",  link: "/" }}
         backgroundcolor="bg-brandblack"
         paddingBottom="pb-0"
+        showGlow={true}
         
       />
       <SolutionContainer 

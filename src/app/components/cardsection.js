@@ -19,7 +19,7 @@ const CardSection = () => {
         {
             id:'1',
             image: image2,
-            header: 'industrial movers in the west African stored energy sector',
+            header: 'Industrial Movers In The West African Stored Energy Sector',
             paragraph: 'catering to an ever-growing market that demands sustainable options for transportation',
             delay:'0.4'
         },
